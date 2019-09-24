@@ -1,7 +1,7 @@
-_G.AbilitiesKV = LoadKeyValues("scripts/npc/npc_abilities.txt")
+_G.AbilitiesKV = LoadKeyValues("scripts/npc/for_script_npc_abilities.txt")
 _G.AbilitiesCount = GetTableLength(AbilitiesKV)
 
-_G.HeroesKV = LoadKeyValues("scripts/npc/npc_heroes.txt")
+_G.HeroesKV = LoadKeyValues("scripts/npc/for_script_npc_heroes.txt")
 
 _G.HeroAbilities = {}
 for heroName,data in pairs(HeroesKV) do
