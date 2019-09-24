@@ -1,0 +1,116 @@
+.GroundsLootRoot {
+	width: 100%;
+	height: 100%;
+}
+
+#GroundsLootWindow {
+	vertical-align: center;
+	horizontal-align: center;
+
+	width: 544px;
+	height: 458px;
+	background-image: url("file://{images}/custom_game/loot_bg_small.png");
+
+/*	background-image: url("file://{images}/custom_game/xp.png");
+	background-image: url("file://{images}/custom_game/ap.png");
+	background-image: url("file://{images}/custom_game/gold.png");
+	background-image: url("file://{images}/custom_game/levelup.png");
+
+	background-image: url("file://{images}/custom_game/bonuses/Common/gold.png");
+	background-image: url("file://{images}/custom_game/bonuses/Common/xp.png");
+	background-image: url("file://{images}/custom_game/bonuses/Common/modifier_bonus_max_mana.png");
+	background-image: url("file://{images}/custom_game/bonuses/Common/modifier_bonus_damage.png");
+	background-image: url("file://{images}/custom_game/bonuses/Common/modifier_bonus_ms.png");
+	background-image: url("file://{images}/custom_game/bonuses/Common/modifier_bonus_vision.png");
+	background-image: url("file://{images}/custom_game/bonuses/Common/modifier_rune_haste.png");
+	background-image: url("file://{images}/custom_game/bonuses/Common/modifier_rune_doubledamage.png");
+	background-image: url("file://{images}/custom_game/bonuses/Common/illusions.png");
+	background-image: url("file://{images}/custom_game/bonuses/Common/mana.png");
+
+	background-image: url("file://{images}/custom_game/bonuses/Uncommon/gold.png");
+	background-image: url("file://{images}/custom_game/bonuses/Uncommon/xp.png");
+	background-image: url("file://{images}/custom_game/bonuses/Uncommon/modifier_bonus_max_mana.png");
+	background-image: url("file://{images}/custom_game/bonuses/Uncommon/modifier_bonus_damage.png");
+	background-image: url("file://{images}/custom_game/bonuses/Uncommon/modifier_bonus_ms.png");
+	background-image: url("file://{images}/custom_game/bonuses/Uncommon/modifier_bonus_vision.png");
+	background-image: url("file://{images}/custom_game/bonuses/Uncommon/modifier_invulnerable.png");
+	background-image: url("file://{images}/custom_game/bonuses/Uncommon/modifier_rune_haste.png");
+	background-image: url("file://{images}/custom_game/bonuses/Uncommon/modifier_rune_doubledamage.png");
+
+	background-image: url("file://{images}/custom_game/bonuses/Rare/gold.png");
+	background-image: url("file://{images}/custom_game/bonuses/Rare/xp.png");
+	background-image: url("file://{images}/custom_game/bonuses/Rare/modifier_bonus_max_mana.png");
+	background-image: url("file://{images}/custom_game/bonuses/Rare/modifier_bonus_damage.png");
+	background-image: url("file://{images}/custom_game/bonuses/Rare/modifier_bonus_ms.png");
+	background-image: url("file://{images}/custom_game/bonuses/Rare/modifier_invulnerable.png");
+	background-image: url("file://{images}/custom_game/bonuses/Rare/modifier_true_sight.png");
+	background-image: url("file://{images}/custom_game/bonuses/Rare/modifier_bonus_flying_vision.png");
+	background-image: url("file://{images}/custom_game/bonuses/Rare/modifier_bonus_unobstructed_movement.png");
+	background-image: url("file://{images}/custom_game/bonuses/Rare/modifier_rune_haste.png");
+	background-image: url("file://{images}/custom_game/bonuses/Rare/modifier_rune_doubledamage.png");
+	*/
+
+	transition-property: blur, transform, opacity, width, height, wash-color, pre-transform-scale2d, saturation;
+	transition-duration: 0.3s, 0.3s, 0.3s;
+	transition-timing-function: ease-in;
+}
+
+.WindowClosed {
+	transform: rotateX(6deg) translate3d( 0px, -75px, 0px );
+	blur: gaussian( 15.0 );
+	opacity: 0.0;
+}
+
+#GroundsLootSlots {
+	vertical-align: center;
+	horizontal-align: center;
+	flow-children: right;
+	margin-top: 55px;
+}
+
+.GroundsLootSlot {
+	flow-children: down;
+	width: 150px;
+	min-height: 215px;
+	margin: 8px;
+}
+
+.GroundsLootSlot Label, Button {
+	horizontal-align: center;
+	text-align: center;
+	margin: 6px;
+	margin-bottom: 0px;
+}
+
+#GroundsLootIcon {
+	horizontal-align: center;
+	background-color: transparent;
+	width: 128px;
+	height: 128px;
+	/*margin: 12px;*/
+}
+
+.GroundsLootIconContent {
+	width: 128px;
+	height: 128px;
+}
+
+#SlotItemIcon {
+	transform: scale3d(1.4,1.4,1.4);
+}
+
+#SlotHeroIcon {
+	horizontal-align: center;
+	background-color: transparent;
+	height: 128px;
+	width: 97px;
+	border: 1px solid #bbbbbbFF;
+}
+
+#Slot1 {
+	margin-top: 50px;
+}
+
+.Hide {
+	opacity: 0;
+}

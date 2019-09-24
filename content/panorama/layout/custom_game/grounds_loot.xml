@@ -1,0 +1,31 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/grounds_loot.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/grounds_loot.js" />
+	</scripts>
+	<snippets>
+		<snippet name="Slot">
+			<Panel hittest="false" class="GroundsLootSlot">
+				<Panel id="GroundsLootIcon">
+					<DOTAAbilityImage class="GroundsLootIconContent" id="SlotAbilityIcon" abilityname="rubick_null_field"/>
+					<DOTAItemImage class="GroundsLootIconContent Hide" id="SlotItemIcon" itemname="item_blink" />
+					<!-- <DOTAHeroImage class="Hide" id="SlotHeroIcon" heroname="npc_dota_hero_nevermore" heroimagestyle="portrait" /> -->
+					<Image class="GroundsLootIconContent Hide" id="SlotMiscIcon" src="file://{images}/custom_game/my_image.png" />
+				</Panel>
+				<Label id="SlotName" text="Reward"/>
+				<Button class="ButtonBevel" id="SlotButton">
+					<Label text="CLAIM" />
+				</Button>
+			</Panel>
+		</snippet>		
+	</snippets>
+	<Panel hittest="false" class="GroundsLootRoot">
+		<Panel hittest="false" id="GroundsLootWindow" class="WindowClosed">
+			<Panel hittest="false" id="GroundsLootSlots">
+			</Panel>
+		</Panel>
+	</Panel>
+</root>
