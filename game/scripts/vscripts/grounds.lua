@@ -500,7 +500,7 @@ function OnBonusCratePicked( owner, forcedRarity )
 end
 
 function OnStartingCratePicked( owner )
-	local heroes = LoadKeyValues("scripts/npc/npc_heroes.txt")
+	local heroes = LoadKeyValues("scripts/npc/for_script_npc_heroes.txt")
 	local loot = {}
 
 	local pID = owner:GetPlayerID()
